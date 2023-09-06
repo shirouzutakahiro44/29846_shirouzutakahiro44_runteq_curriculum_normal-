@@ -1,4 +1,7 @@
 ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
   defaults:
     login: 'ログイン'
     register: '登録'
@@ -24,8 +27,14 @@ ja:
   boards:
     index:
       title: '掲示板一覧'
+      no_result: '掲示板がありません'
     new:
       title: '掲示板作成'
+    create:
+      success: '投稿に成功しました'
+      fail: '投稿に失敗しました'
+    destroy: 
+      success: '投稿を削除しました'
     bookmarks:
       title: 'ブックマーク一覧'
   profiles:

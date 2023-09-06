@@ -15,6 +15,10 @@ ja:
           file: プロフィール画像
           password: パスワード
           password_confirmation: パスワード確認
+        board:
+          id: ID
+          title: タイトル
+          description: 投稿
   # 全てのmodelで共通して使用するattributesを定義
   attributes:
     created_at: 作成日
