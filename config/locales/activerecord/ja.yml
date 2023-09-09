@@ -19,6 +19,10 @@ ja:
           id: ID
           title: タイトル
           description: 投稿
+    errors:
+      medels:
+        user:
+          brank: が入力です
   # 全てのmodelで共通して使用するattributesを定義
   attributes:
     created_at: 作成日
