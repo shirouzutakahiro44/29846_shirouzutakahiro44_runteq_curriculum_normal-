@@ -19,6 +19,7 @@ ja:
           id: ID
           title: タイトル
           description: 投稿
+          image: サムネイル
     errors:
       medels:
         user:
