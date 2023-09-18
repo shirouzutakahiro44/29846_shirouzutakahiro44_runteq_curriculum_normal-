@@ -10,5 +10,9 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { maximum: 255 }
 
   has_many :boards, dependent: :destroy
-  
+  has_many :comments
+
+  def my_comment?(comment)
+    comment.user_id == self.id
+  end
 end

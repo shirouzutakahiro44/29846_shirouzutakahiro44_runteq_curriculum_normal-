@@ -4,6 +4,7 @@ ja:
       # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
       user: ユーザー 
       board: 掲示板
+      comment: コメント
     # model毎に定義したいattributesを記述
     attributes:
         user:
@@ -20,6 +21,8 @@ ja:
           title: タイトル
           description: 投稿
           image: サムネイル
+        comment:
+          body: コメント
     errors:
       medels:
         user:

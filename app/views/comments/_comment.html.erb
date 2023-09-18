@@ -1,0 +1,32 @@
+<p>
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
+  <table id="js-table-comment" class="table">
+    <tr id="comment-25">
+      <td style="width: 60px">
+          <a href='#' class='nav-link' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' id='header-profile'>
+            <%= image_tag 'sample.jpg' ,'class': 'rounded-circle mr15',  width: '50', height: '50' %>
+          </a>
+      </td>
+      <td>
+        <h3 class="small"><%= comment.user.decorate.full_name %></h3>
+        <div id="js-comment-25">
+            <%= comment.body %>
+        </div>
+
+        <% if current_user.my_comment?(comment) %>
+        <div class='mr10 float-right'>
+          <%= link_to board_path(@board), id: "button-edit-#{@board.id}" do %>
+          <%= icon 'fa', 'pen' %>
+          <% end %>
+          <%= link_to boards_path, id: "button-delete-#{@board.id}", method: :delete, data: {confirm: 'Are you sure?'} do %>
+          <%= icon 'fas', 'trash' %>
+          <% end %>
+        </div>
+       <% end %>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</p>

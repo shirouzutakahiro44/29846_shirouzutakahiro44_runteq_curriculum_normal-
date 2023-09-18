@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   
   resources :users, only: %i[new create index]
 
-  resources :boards, only: %i[new create index]
+  resources :boards, only: %i[new create index show destroy] do
+    resources :comments,shallow: true 
+  end
   
 end

@@ -5,6 +5,10 @@ class BoardsController < ApplicationController
   end
 
   def show
+    @board = Board.find(params[:id])
+    @comments = @board.comments.includes(:user).order(created_at: :desc)
+    @comment = current_user.comments.new
+    @comment.board_id == @board_id
   end
 
   def new
@@ -25,7 +29,14 @@ class BoardsController < ApplicationController
         #binding.pry
     end
   end
-end
+  end
+
+   def destroy
+    @board = Board.find(params[:id])
+    @board.destroy
+    redirect_to boards_path
+   end
+    
   
 
 
