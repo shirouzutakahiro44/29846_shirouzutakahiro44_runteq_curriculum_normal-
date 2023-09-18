@@ -15,4 +15,9 @@ class User < ApplicationRecord
   def my_comment?(comment)
     comment.user_id == self.id
   end
+
+  def my_board?(board)
+    board.user_id == self.id
+  end
+  
 end

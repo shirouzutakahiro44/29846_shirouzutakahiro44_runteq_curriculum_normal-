@@ -40,6 +40,10 @@ ja:
       success: '投稿を削除しました'
     bookmarks:
       title: 'ブックマーク一覧'
+    edit:
+      title: '掲示板編集'
+    update:
+      success: '掲示板を更新しました'
   profiles:
     show:
       title: 'プロフィール'
