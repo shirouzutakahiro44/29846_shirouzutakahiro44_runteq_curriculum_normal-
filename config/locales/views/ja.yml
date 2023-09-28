@@ -40,13 +40,20 @@ ja:
       success: '投稿を削除しました'
     bookmarks:
       title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません'
     edit:
       title: '掲示板編集'
     update:
       success: '掲示板を更新しました'
+  bookmarks:
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      success: 'ブックマークを外しました'
   profiles:
     show:
       title: 'プロフィール'
   shared:
     _header:
       logout: 'ログアウト'
+  

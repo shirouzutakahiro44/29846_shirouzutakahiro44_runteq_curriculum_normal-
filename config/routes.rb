@@ -11,6 +11,12 @@ Rails.application.routes.draw do
 
   resources :boards, only: %i[new create index show destroy edit update] do
     resources :comments,shallow: true 
+    collection do
+      get :bookmarks
+    end
   end
+
+  resources :bookmarks, only:  %i[create destroy]
+
   
 end
