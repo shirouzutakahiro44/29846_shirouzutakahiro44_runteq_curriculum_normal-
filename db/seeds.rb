@@ -18,7 +18,7 @@
     )
   end
   
-  20.times do |index|
+  50.times do |index|
     Board.create(
         user: User.offset(rand(User.count)).first,
         title: "タイトル#{index}",

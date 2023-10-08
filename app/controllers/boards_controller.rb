@@ -1,14 +1,14 @@
 class BoardsController < ApplicationController
 
   def index
-    @boards = Board.all.includes(:user).order(created_at: :desc)
+    @boards = Board.all.includes(:user).order(created_at: :desc).page(params[:page])
   end
 
   def show
     @board = Board.find(params[:id])
     @comments = @board.comments.includes(:user).order(created_at: :desc)
     @comment = current_user.comments.new
-    @comment.board_id == @board_id
+    @comment.board_id == @board.id
   end
 
   def new
@@ -54,7 +54,7 @@ class BoardsController < ApplicationController
   end
 
   def bookmarks
-    @bookmark_boards = current_user.bookmarks_boards.includes(:user).order(created_at: :desc)
+    @bookmark_boards = current_user.bookmarks_boards.includes(:user).order(created_at: :desc).page(params[:page])
   end
 
   private

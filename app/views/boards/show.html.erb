@@ -38,19 +38,14 @@
 
   <!-- コメントフォーム -->
   <p>
-    <%= render 'comments/form' ,comment: @comment %>
+    <%= render 'comments/form' ,{comment: @comment , board: @board} %>
   </p>
 
   <% unless @board.comments.count.zero? %>
-  <hr>
+
 
   <p>
-    <strong>Comment:</strong>
-    <%= "#{@board.comments.count}comments" %>
-  </p>
-
-  <p>
-    <%= render @board.comments %>
+    <%= render 'comments/comments', {comments: @comments}  %>
   </p>
 <% end %>
 

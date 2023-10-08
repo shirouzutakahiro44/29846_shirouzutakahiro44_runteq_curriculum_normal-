@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   
   resources :users, only: %i[new create index]
 
-  resources :boards, only: %i[new create index show destroy edit update] do
-    resources :comments,shallow: true 
+  resources :boards do
+    resources :comments, only: %i[create destroy], shallow: true
     collection do
       get :bookmarks
     end
