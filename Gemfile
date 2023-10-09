@@ -51,6 +51,8 @@ gem 'pry-byebug'
 
 gem 'rails-i18n', '~> 5.1' 
 
+gem 'ransack'
+
 gem 'kaminari', '~> 0.17.0'
 
 

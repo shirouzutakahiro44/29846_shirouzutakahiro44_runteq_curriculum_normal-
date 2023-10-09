@@ -9,6 +9,8 @@ class User < ApplicationRecord
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :last_name, presence: true, length: { maximum: 255 }
 
+  mount_uploader :avatar, AvatarUploader
+
   has_many :boards, dependent: :destroy
   has_many :comments
   has_many :bookmarks , dependent: :destroy
