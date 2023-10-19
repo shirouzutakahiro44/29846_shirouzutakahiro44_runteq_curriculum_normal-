@@ -55,6 +55,8 @@ gem 'ransack'
 
 gem 'kaminari', '~> 0.17.0'
 
+gem 'config'
+
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -76,6 +78,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener_web', '~> 1.0'
 end
 
 group :test do

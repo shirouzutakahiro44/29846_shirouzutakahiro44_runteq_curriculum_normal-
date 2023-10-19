@@ -5,69 +5,80 @@ ja:
       last: "最後 &raquo;"
       previous: "&lsaquo; 前"
       next: "次 &rsaquo;"
-      truncate: "..."    
+      truncate: "..."
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
   defaults:
-    login: 'ログイン'
-    register: '登録'
-    logout: 'ログアウト'
-    search_word: '検索ワード'
+    login: "ログイン"
+    register: "登録"
+    logout: "ログアウト"
+    search_word: "検索ワード"
     message:
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
       delete_confirm: "コメントを削除しますか？"
   users:
     new:
-      title: 'ユーザー登録'
-      to_login_page: 'ログインページへ'
-      register: '登録'
+      title: "ユーザー登録"
+      to_login_page: "ログインページへ"
+      register: "登録"
     create:
-      success: 'ユーザー登録が完了しました'
-      fail: 'ユーザー登録に失敗しました'
+      success: "ユーザー登録が完了しました"
+      fail: "ユーザー登録に失敗しました"
   user_sessions:
     new:
-      title: 'ログイン'
-      to_register_page: '登録ページへ'
-      password_forget: 'パスワードをお忘れの方はこちら'
+      title: "ログイン"
+      to_register_page: "登録ページへ"
+      password_forget: "パスワードをお忘れの方はこちら"
     create:
-      success: 'ログインしました'
-      fail: 'ログインに失敗しました'
-    destroy: 
-      success: 'ログアウトしました'
+      success: "ログインしました"
+      fail: "ログインに失敗しました"
+    destroy:
+      success: "ログアウトしました"
   boards:
     index:
-      title: '掲示板一覧'
-      no_result: '掲示板がありません'
+      title: "掲示板一覧"
+      no_result: "掲示板がありません"
     new:
-      title: '掲示板作成'
+      title: "掲示板作成"
     create:
-      success: '掲示板を作成しました'
-      fail: '掲示板を作成できませんでした'
-    destroy: 
-      success: '投稿を削除しました'
+      success: "掲示板を作成しました"
+      fail: "掲示板を作成できませんでした"
+    destroy:
+      success: "投稿を削除しました"
     bookmarks:
-      title: 'ブックマーク一覧'
-      no_result: 'ブックマーク中の掲示板がありません'
+      title: "ブックマーク一覧"
+      no_result: "ブックマーク中の掲示板がありません"
     edit:
-      title: '掲示板編集'
+      title: "掲示板編集"
     update:
-      success: '掲示板を更新しました'
+      success: "掲示板を更新しました"
     pagination:
-      First: '最初'
-      Last: '最後'
+      First: "最初"
+      Last: "最後"
   bookmarks:
     create:
-      success: 'ブックマークしました'
+      success: "ブックマークしました"
     destroy:
-      success: 'ブックマークを外しました'
+      success: "ブックマークを外しました"
   profiles:
     show:
-      title: 'プロフィール'
+      title: "プロフィール"
     edit:
-      title: 'プロフィール編集'
+      title: "プロフィール編集"
+  password_resets:
+    new:
+      submit: "送信"
+      title: "パスワードリセット申請"
+    create:
+      success: "メールを送信しました"
+    edit:
+      title: "パスワード編集"
+    update:
+      success: "パスワードが変更されました"
+      fail: "パスワードリセットに失敗しました"
 
   shared:
     _header:
-      logout: 'ログアウト'
+      logout: "ログアウト"
