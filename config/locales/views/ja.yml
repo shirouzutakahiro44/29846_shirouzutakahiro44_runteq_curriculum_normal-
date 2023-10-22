@@ -18,6 +18,8 @@ ja:
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
       delete_confirm: "コメントを削除しますか？"
+      not_authenticated: "管理者権限がありません"
+      require_login: "ログインしてください"
   users:
     new:
       title: "ユーザー登録"
@@ -82,3 +84,15 @@ ja:
   shared:
     _header:
       logout: "ログアウト"
+  admin:
+    user_sessions:
+      new:
+        title: "ログイン"
+    layouts:
+      admin_login:
+        title: "管理者ページ"
+      application:
+        title: "ダッシュボード"
+    dashboards:
+      index:
+        title: "ダッシュボード"

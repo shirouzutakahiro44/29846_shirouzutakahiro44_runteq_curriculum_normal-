@@ -11,6 +11,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { maximum: 255 }
 
   mount_uploader :avatar, AvatarUploader
+  enum role: { general: 0, admin:1 }
 
   has_many :boards, dependent: :destroy
   has_many :comments

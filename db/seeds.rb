@@ -25,3 +25,10 @@
         description: "本文#{index}"
     )
   end
+
+  User.create!(last_name: "管理者",
+               first_name: "白水",
+               email: "admin@example.com",
+               password: "1582072",
+               password_confirmation: "1582072",
+               role: 1)
